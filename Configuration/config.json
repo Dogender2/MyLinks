@@ -1,0 +1,21 @@
+{
+    "Wlasciciel": "the_world_throught_my_lens",
+    "SocialMedia":
+    {
+        "instagram":
+        {
+            "IGname": "the_world_throught_my_lens",
+            "IGurl": "https://www.instagram.com/the_world_throught_my_lens/"
+        },
+        "pinterest":
+        {
+            "PinName": "the_world_throught_my_lens",
+            "PinURL": "https://pl.pinterest.com/the_world_throught_my_lens/"
+        },
+        "facebook":
+        {
+            "fbName": "Bartosz Kwiatek",
+            "fbURL": "https://www.facebook.com/bartosz.kwiatek.666"
+        }
+    }
+}
