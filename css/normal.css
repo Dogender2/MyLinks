@@ -122,11 +122,21 @@ body#gallery #container li .imgtit {
   font-weight: bold;
   font-size: 45px;
   border-bottom: 5px solid #000000;
+  margin-bottom: 20px;
 }
 
-body#gallery #container li .imgdesc {
-  white-space: pre-wrap;
+body#gallery #container li .description {
+  margin-top: 10px;
+}
+
+body#gallery #container li .description .imgdesc {
   font-size: 25px;
+}
+
+body#gallery #container li .description .imgdesc a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 body#gallery #container li img {
@@ -156,7 +166,6 @@ body#gallery #container li img {
     border-bottom: 5px solid #000000;
   }
   body#gallery #container li .imgdesc {
-    white-space: pre-wrap;
     font-size: 20px;
   }
   body#gallery #container li img {
@@ -178,6 +187,28 @@ body#gallery #container li img {
   body#links #container #links .text-url a {
     font-size: 20px;
   }
+  body#gallery #container {
+    width: 95%;
+    padding: 7px;
+  }
+  body#gallery #container li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body#gallery #container li .imgtit {
+    font-weight: bold;
+    font-size: 45px;
+    border-bottom: 5px solid #000000;
+  }
+  body#gallery #container li .imgdesc {
+    font-size: 20px;
+  }
+  body#gallery #container li img {
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -191,6 +222,11 @@ body#gallery #container li img {
   }
   body#links #container #links .text-url a {
     font-size: 20px;
+  }
+  body#gallery #container li .imgtit {
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 5px solid #000000;
   }
 }
 
@@ -302,7 +338,7 @@ body#gallery #container li img {
     border-bottom: 5px solid #000000;
   }
   body#gallery #container li .imgdesc {
-    font-size: 14px;
+    font-size: 17px;
   }
   body#gallery #container li img {
     width: 100%;
@@ -367,7 +403,7 @@ body#gallery #container li img {
     border-bottom: 5px solid #000000;
   }
   body#gallery #container li .imgdesc {
-    font-size: 12px;
+    font-size: 15px;
   }
   body#gallery #container li img {
     width: 100%;
