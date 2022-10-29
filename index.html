@@ -13,6 +13,20 @@
     <script src="https://kit.fontawesome.com/ea9d3773dd.js" crossorigin="anonymous"></script>
 
     <!--   JS Files   -->
+    <script>
+        $.ajax({
+            url: './Configuration/config.json',
+            dataType: 'json',
+            type: 'get',
+            cache: false,
+            success: function(data) {
+                console.log(data);
+                //OwnerName
+                $("#OwnerName2").text(data.Wlasciciel);
+
+            }
+        })
+    </script>
 
     <!--   Styles   -->
     <link rel="stylesheet" href="./css/normal.css">
@@ -20,9 +34,53 @@
 </head>
 
 
-<body>
-    
-    
+<body id="links">
+
+    <div id="container">
+
+        <div id="profile">
+            <div id="profile-img">
+                <img src="./images/profile-img.jpg" alt="Profile Image">
+            </div>
+            <div id="profile-name">
+                <span id="OwnerName2">
+                    x
+                </span>
+            </div>
+        </div>
+
+        <div id="links">
+
+            <!--   Instagram   -->
+            <div class="instagram">
+
+                <div class="text-url">
+                    <a href="./Links/">
+                        <div class="icons">
+                            <i class="fa-solid fa-hashtag"></i>
+                        </div>
+                        <span>Social Media</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!--   Pinterest   -->
+            <div class="pinterest">
+
+                <div class="text-url">
+                    <a href="./Gallery/">
+                        <div class="icons">
+                            <i class="fa-regular fa-image"></i>
+                        </div>
+                        <span>Gallery</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 </body>
 
